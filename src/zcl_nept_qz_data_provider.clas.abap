@@ -41,7 +41,7 @@ CLASS zcl_nept_qz_data_provider DEFINITION
     CLASS-METHODS add
       IMPORTING
         !iv_test_id      TYPE znept_qz_test_id_de OPTIONAL
-        !iv_description  TYPE znept_qz_test_name_de
+        !iv_description  TYPE znept_qz_test_name_de OPTIONAL
         !iv_published    TYPE znept_qz_published_de
         !it_db_parts     TYPE znept_qz_db_parts_t
         !it_db_questions TYPE znept_qz_db_questions_t
