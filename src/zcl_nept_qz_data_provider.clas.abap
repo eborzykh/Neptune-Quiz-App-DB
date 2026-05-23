@@ -128,10 +128,7 @@ CLASS zcl_nept_qz_data_provider IMPLEMENTATION.
 
     CLEAR es_db_tests.
 
-    IF it_db_questions[] IS INITIAL OR it_db_variants[] IS INITIAL.
-      ev_db_error = abap_true.
-      RETURN.
-    ENDIF.
+* check for initial questions / variants / parts must be before calling this method
 
     lt_db_parts[] = it_db_parts[].
     lt_db_questions[] = it_db_questions[].
@@ -181,45 +178,51 @@ CLASS zcl_nept_qz_data_provider IMPLEMENTATION.
 
 * Insert Parts
 
-    LOOP AT lt_db_parts ASSIGNING FIELD-SYMBOL(<fs_db_parts>).
-      <fs_db_parts>-test_id = ls_db_tests-test_id.
-    ENDLOOP.
+    IF NOT lt_db_parts[] IS INITIAL.
+      LOOP AT lt_db_parts ASSIGNING FIELD-SYMBOL(<fs_db_parts>).
+        <fs_db_parts>-test_id = ls_db_tests-test_id.
+      ENDLOOP.
 
-    INSERT znept_qz_prt FROM TABLE lt_db_parts.
+      INSERT znept_qz_prt FROM TABLE lt_db_parts.
 
-    IF sy-subrc <> 0.
-      ev_db_error = abap_true.
-      RETURN.
+      IF sy-subrc <> 0.
+        ev_db_error = abap_true.
+        RETURN.
+      ENDIF.
+      ev_do_commit = abap_true.
     ENDIF.
-    ev_do_commit = abap_true.
 
 * Insert Question
 
-    LOOP AT lt_db_questions ASSIGNING FIELD-SYMBOL(<fs_db_questions>).
-      <fs_db_questions>-test_id = ls_db_tests-test_id.
-    ENDLOOP.
+    IF NOT lt_db_questions[] IS INITIAL.
+      LOOP AT lt_db_questions ASSIGNING FIELD-SYMBOL(<fs_db_questions>).
+        <fs_db_questions>-test_id = ls_db_tests-test_id.
+      ENDLOOP.
 
-    INSERT znept_qz_qst FROM TABLE lt_db_questions.
+      INSERT znept_qz_qst FROM TABLE lt_db_questions.
 
-    IF sy-subrc <> 0.
-      ev_db_error = abap_true.
-      RETURN.
+      IF sy-subrc <> 0.
+        ev_db_error = abap_true.
+        RETURN.
+      ENDIF.
+      ev_do_commit = abap_true.
     ENDIF.
-    ev_do_commit = abap_true.
 
 * Insert Variants
 
-    LOOP AT lt_db_variants ASSIGNING FIELD-SYMBOL(<fs_db_variants>).
-      <fs_db_variants>-test_id = ls_db_tests-test_id.
-    ENDLOOP.
+    IF NOT lt_db_variants[] IS INITIAL.
+      LOOP AT lt_db_variants ASSIGNING FIELD-SYMBOL(<fs_db_variants>).
+        <fs_db_variants>-test_id = ls_db_tests-test_id.
+      ENDLOOP.
 
-    INSERT znept_qz_var FROM TABLE lt_db_variants.
+      INSERT znept_qz_var FROM TABLE lt_db_variants.
 
-    IF sy-subrc <> 0.
-      ev_db_error = abap_true.
-      RETURN.
+      IF sy-subrc <> 0.
+        ev_db_error = abap_true.
+        RETURN.
+      ENDIF.
+      ev_do_commit = abap_true.
     ENDIF.
-    ev_do_commit = abap_true.
 
     es_db_tests = ls_db_tests.
 
