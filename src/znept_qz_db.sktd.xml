@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SKTD" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SKTD>
+    <METADATA>
+     <DESCRIPTION>Documentation for ZNEPT_QZ_DB</DESCRIPTION>
+     <LANGUAGE>EN</LANGUAGE>
+     <ABAP_LANGU_VERSION>0</ABAP_LANGU_VERSION>
+    </METADATA>
+    <REF_OBJECT>
+     <TYPE>DEVC/K</TYPE>
+     <NAME>ZNEPT_QZ_DB</NAME>
+    </REF_OBJECT>
+    <ELEMENTS>
+     <item>
+      <ID>ZNEPT_QZ_DB</ID>
+      <REF>
+       <URI>/sap/bc/adt/packages/znept_qz_db</URI>
+       <TYPE>DEVC/K</TYPE>
+       <NAME>ZNEPT_QZ_DB</NAME>
+       <DESCRIPTION>Neptune Quiz Application (Data)</DESCRIPTION>
+      </REF>
+      <TEXT>RGV0YWlsZWQgRG9jdW1lbnRhdGlvbjogemNsX25lcHRfcXpfZGF0YV9wcm92aWRlcgpDbGFzcyBP
+dmVydmlldwpUaGUgY2xhc3MgemNsX25lcHRfcXpfZGF0YV9wcm92aWRlciBhY3RzIGFzIHRoZSBt
+YWluIGRhdGEgaGFuZGxlciBmb3IgTmVwdHVuZSBRdWl6IG1hbmFnZW1lbnQuIEl0IHByb3ZpZGVz
+IHN0YXRpYyBtZXRob2RzIGZvciB5b3UgdG8gY3JlYXRlLCByZWFkLCB1cGRhdGUsIGFuZCBkZWxl
+dGUgcXVpeiBkYXRhIHN0b3JlZCBpbiBkYXRhYmFzZSB0YWJsZXMuIFRoZSBjbGFzcyBhbHNvIHN5
+bmNocm9uaXplcyB1c2VyIGJvb2ttYXJrcyBhbmQgcXVpeiBtZXRyaWNzLCBtYW5hZ2VzIHB1Ymxp
+c2hpbmcgc3RhdGUsIGFuZCBwZXJmb3JtcyBkYXRhIGludGVncml0eSBjaGVja3MuCgpDb25zdGFu
+dHMKVGhlIGNsYXNzIGRlZmluZXMgc2V2ZXJhbCBjb25zdGFudHMgdG8gc3RhbmRhcmRpemUgcXVp
+eiBzdGF0ZXMsIHByb2dyZXNzIHZhbHVlcywgYm9va21hcmtzLCBhbmQgc3luY2hyb25pemF0aW9u
+IGluZGljYXRvcnM6CgpQcm9ncmVzcyBTdGF0ZXMKCmdjX3Byb2dyZXNzX3VuYW5zd2VyZWQ6ICIw
+IiAtIE5vIGFuc3dlciBnaXZlbi4KZ2NfcHJvZ3Jlc3NfaW5jb3JyZWN0OiAiMSIgLSBJbmNvcnJl
+Y3QgYW5zd2VyIHByb3ZpZGVkLgpnY19wcm9ncmVzc19pbXByb3ZlZF9sb3c6ICIyIiAtIEltcHJv
+dmVkIHBlcmZvcm1hbmNlIGF0IGxvdyBsZXZlbC4KZ2NfcHJvZ3Jlc3NfaW1wcm92ZWRfbWVkaXVt
+OiAiMyIgLSBNZWRpdW0gbGV2ZWwgaW1wcm92ZW1lbnQuCmdjX3Byb2dyZXNzX2ltcHJvdmVkX2hp
+Z2g6ICI0IiAtIEhpZ2ggbGV2ZWwgaW1wcm92ZW1lbnQgaW4gcHJvZ3Jlc3MuCmdjX3Byb2dyZXNz
+X2NvcnJlY3Q6ICI1IiAtIENvcnJlY3QgYW5zd2VyIHJlY29yZGVkLgpCb29rbWFyayBTdGF0ZXMK
+CmdjX2Jvb2ttYXJrX3VubWFya2VkOiBOb3QgbWFya2VkLgpnY19ib29rbWFya19ib29rbWFya2Vk
+OiBNYXJrZWQgYXMgYSBib29rbWFyay4KU3luYyBEYXRlcyBhbmQgVGltZXMKCmdjX3N5bmNfZGF0
+ZV9pbml0aWFsOiAiMDAwMDAwMDAiIC0gSW5pdGlhbCBkYXRlIGZvciBzeW5jLgpnY19zeW5jX3Rp
+bWVfaW5pdGlhbDogIjAwMDAwMCIgLSBJbml0aWFsIHRpbWUgZm9yIHN5bmMuCmdjX3N5bmNfZGF0
+ZV9maW5hbDogIjk5OTkxMjMxIiAtIEZpbmFsIGRhdGUgZm9yIHN5bmMuClF1aXogUHVibGlzaGlu
+ZyBTdGF0ZXMKCmdjX3F1aXpfcHVibGlzaGVkOiAiWCIgLSBRdWl6IGlzIHB1Ymxpc2hlZCBhbmQg
+dmlzaWJsZSB0byB1c2Vycy4KZ2NfcXVpel9wcml2YXRlOiAiICIgLSBPbmx5IHZpc2libGUgdG8g
+dGhlIGNyZWF0b3IuCk1ldGhvZHMKMS4gUXVpeiBhbmQgRGF0YSBNYW5hZ2VtZW50CmFkZAoKUHVy
+cG9zZTogQWRkIGEgbmV3IHF1aXogb3IgYXBwZW5kIHBhcnRzLCBxdWVzdGlvbnMsIGFuZCB2YXJp
+YW50cyB0byBhbiBleGlzdGluZyBxdWl6LgpQYXJhbWV0ZXJzOiBUZXN0IElELCBEZXNjcmlwdGlv
+biwgUHVibGlzaGVkIFN0YXRlLCBhbmQgdGFibGVzIGZvciBwYXJ0cywgcXVlc3Rpb25zLCBhbmQg
+dmFyaWFudHMuClJldHVybnM6IFF1aXogZGF0YSBzdHJ1Y3R1cmUsIGVycm9yIGFuZCBjb21taXQg
+ZmxhZ3MuCk5vdGVzOiBBdm9pZHMgZHVwbGljYXRlcyBhbmQgY2hlY2tzIGNvbnRlbnQgY29uc2lz
+dGVuY3kgYmVmb3JlIGluc2VydGluZy4KZGVsZXRlCgpQdXJwb3NlOiBEZWxldGUgYSBxdWl6IGFu
+ZCBhbGwgaXRzIHJlbGF0ZWQgcmVjb3Jkcywgc3VjaCBhcyBwYXJ0cywgcXVlc3Rpb25zLCB2YXJp
+YW50cywgYW5kIGJvb2ttYXJrcy4KUGFyYW1ldGVyczogUXVpeiBrZXkgc3RydWN0dXJlLgpSZXR1
+cm5zOiBFcnJvciBhbmQgY29tbWl0IGZsYWdzLgpOb3RlczogT25seSB0aGUgb3duZXIgY2FuIGRl
+bGV0ZSB0aGVpciBxdWl6LgpyZW5hbWUKClB1cnBvc2U6IENoYW5nZSB0aGUgcXVpeiBkZXNjcmlw
+dGlvbiBmb3IgZWFzaWVyIGlkZW50aWZpY2F0aW9uLgpQYXJhbWV0ZXJzOiBRdWl6IGtleSBhbmQg
+bmV3IGRlc2NyaXB0aW9uLgpSZXR1cm5zOiBFcnJvciBhbmQgY29tbWl0IGZsYWdzLgpwdWJsaXNo
+CgpQdXJwb3NlOiBQdWJsaXNoIG9yIHVucHVibGlzaCBhIHF1aXouClBhcmFtZXRlcnM6IFF1aXog
+a2V5IGFuZCBwdWJsaXNoZWQgc3RhdGUuClJldHVybnM6IEVycm9yIGFuZCBjb21taXQgZmxhZ3Mu
+Ck5vdGVzOiBPbmx5IHRoZSBvd25lciBjYW4gcHVibGlzaCBvciB1bnB1Ymxpc2guCjIuIFJlYWRp
+bmcgRGF0YQpyZWFkX2F2YWlsYWJsZV90ZXN0CgpQdXJwb3NlOiBMaXN0IGFsbCBhdmFpbGFibGUg
+cXVpenplcywgZWl0aGVyIGNyZWF0ZWQgYnkgeW91IG9yIHB1Ymxpc2hlZCBieSBvdGhlcnMuClBh
+cmFtZXRlcnM6IE5vbmUuClJldHVybnM6IFRhYmxlIG9mIHF1aXogc3RydWN0dXJlcy4KcmVhZF9h
+dmFpbGFibGVfbWV0cmljcwoKUHVycG9zZTogTGlzdCBtZXRyaWMgcmVjb3JkcyBmb3IgcXVpenpl
+cyB5b3UgaGF2ZSBpbnRlcmFjdGVkIHdpdGguClJldHVybnM6IFRhYmxlIG9mIG1ldHJpYyBrZXkg
+c3RydWN0dXJlcy4KZ2V0CgpQdXJwb3NlOiBSZWFkIHRoZSBxdWl6IGNvbnRlbnQgKHBhcnRzLCBx
+dWVzdGlvbnMsIHZhcmlhbnRzKSBhbmQgZmV0Y2ggdmVyc2lvbiBpbmZvIGFuZCBjb250ZW50IHN0
+cnVjdHVyZS4KUGFyYW1ldGVyczogUXVpeiBrZXkgYW5kIHZlcnNpb24uClJldHVybnM6IEZldGNo
+ZWQgdmVyc2lvbiwgcGFydHMsIHF1ZXN0aW9ucywgdmFyaWFudHMsIGNoZWNrIGRhdGEsIGVycm9y
+IGZsYWcuCkJlaGF2aW9yOgpTdXBwb3J0cyBkZWx0YSBzeW5jIGJhc2VkIG9uIHZlcnNpb24uCkVu
+c3VyZXMgZGF0YSBpbnRlZ3JpdHkgYmV0d2VlbiByZWxhdGVkIHRhYmxlcy4KaW5mbwoKUHVycG9z
+ZTogUmV0dXJuIHN0YXRpc3RpY3MgZm9yIGEgcXVpei4KUmV0dXJuczogVG90YWwgcGFydHMgYW5k
+IHRvdGFsIHF1ZXN0aW9ucy4KMy4gU3luY2hyb25pemF0aW9uCnN5bmNfYm9va21hcmtzCgpQdXJw
+b3NlOiBTeW5jaHJvbml6ZSBxdWl6IGJvb2ttYXJrcyBiZXR3ZWVuIGNsaWVudCBhbmQgYmFja2Vu
+ZC4KUGFyYW1ldGVyczogT2xkIGFuZCBuZXcgc3luYyB0aW1lc3RhbXBzLCBxdWl6IGtleSwgc2Vu
+dCBib29rbWFya3MuClJldHVybnM6IEJvb2ttYXJrcyB0byB1cGRhdGUsIGVycm9yIGFuZCBjb21t
+aXQgZmxhZ3MuCnN5bmNfbWV0cmljcwoKUHVycG9zZTogU3luY2hyb25pemUgcXVpeiBzb2x2aW5n
+IG1ldHJpY3MgYmV0d2VlbiBjbGllbnQgYW5kIGJhY2tlbmQuClBhcmFtZXRlcnM6IE9sZCBhbmQg
+bmV3IHN5bmMgdGltZXN0YW1wcywgcXVpeiBrZXksIHNlbnQgbWV0cmljcy4KUmV0dXJuczogTWV0
+cmljcyB0byB1cGRhdGUsIGVycm9yIGFuZCBjb21taXQgZmxhZ3MuCk5vdGVzOiBDcmVhdGVzIGEg
+bWV0cmljcyBzZXQgaWYgaXQgZG9lcyBub3QgZXhpc3QgeWV0Lgo0LiBVdGlsaXR5IGFuZCBJbnRl
+cm5hbApjaGVjawoKUHVycG9zZTogKFN0dWIpIFJlc2VydmVkIGZvciBmdXR1cmUgaW50ZWdyaXR5
+IGNoZWNrcy4Ka2V5X2NoZWNrIChQcml2YXRlKQoKUHVycG9zZTogVmVyaWZpZXMgd2hldGhlciBh
+IHRlc3Qga2V5ICh3aXRoIG9wdGlvbmFsIHVwbG9hZCBkYXRlIGFuZCB0aW1lKSBpcyB2YWxpZC4K
+UmV0dXJuczogQm9vbGVhbiByZXN1bHQu</TEXT>
+      <CAN_HAVE_DOCUMENTATION>X</CAN_HAVE_DOCUMENTATION>
+      <LINKS>
+       <item>
+        <HREF>/sap/bc/adt/repository/informationsystem/elementinfo?path=znept_qz_db&amp;type=devc/k</HREF>
+        <REL>http://www.sap.com/adt/relations/elementinfo</REL>
+        <TYPE>application/vnd.sap.adt.elementinfo+xml</TYPE>
+        <TITLE>Show Element Information</TITLE>
+       </item>
+      </LINKS>
+      <SHORTTEXT_OBLIGATION>forbidden</SHORTTEXT_OBLIGATION>
+      <LONGTEXT_OBLIGATION>optional</LONGTEXT_OBLIGATION>
+     </item>
+    </ELEMENTS>
+   </SKTD>
+  </asx:values>
+ </asx:abap>
+</abapGit>

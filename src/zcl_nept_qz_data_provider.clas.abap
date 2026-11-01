@@ -111,7 +111,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_nept_qz_data_provider IMPLEMENTATION.
+CLASS ZCL_NEPT_QZ_DATA_PROVIDER IMPLEMENTATION.
 
 
   METHOD add.
@@ -226,6 +226,10 @@ CLASS zcl_nept_qz_data_provider IMPLEMENTATION.
 
     es_db_tests = ls_db_tests.
 
+  ENDMETHOD.
+
+
+  METHOD check.
   ENDMETHOD.
 
 
@@ -560,6 +564,39 @@ CLASS zcl_nept_qz_data_provider IMPLEMENTATION.
   ENDMETHOD.
 
 
+  METHOD read_available_metrics.
+
+    DATA: lt_db_sync TYPE znept_qz_db_sync_t.
+
+    REFRESH et_db_tests_key[].
+
+    SELECT * FROM znept_qz_mts INTO TABLE lt_db_sync
+      WHERE sync_by = sy-uname.
+
+    IF sy-subrc = 0.
+      MOVE-CORRESPONDING lt_db_sync[] TO et_db_tests_key[].
+    ENDIF.
+
+  ENDMETHOD.
+
+
+  METHOD read_available_test.
+
+    DATA: lt_db_tests TYPE znept_qz_db_tests_t.
+
+    REFRESH et_db_tests[].
+
+    SELECT * FROM znept_qz_tst INTO TABLE lt_db_tests
+      WHERE upload_by = sy-uname
+         OR published = gc_quiz_published.
+
+    IF sy-subrc = 0.
+      et_db_tests[] = lt_db_tests[].
+    ENDIF.
+
+  ENDMETHOD.
+
+
   METHOD rename.
 
     DATA: lv_test_id     TYPE znept_qz_test_id_de,
@@ -596,39 +633,6 @@ CLASS zcl_nept_qz_data_provider IMPLEMENTATION.
 
     ELSE.
       ev_db_error = abap_true.
-    ENDIF.
-
-  ENDMETHOD.
-
-
-  METHOD read_available_test.
-
-    DATA: lt_db_tests TYPE znept_qz_db_tests_t.
-
-    REFRESH et_db_tests[].
-
-    SELECT * FROM znept_qz_tst INTO TABLE lt_db_tests
-      WHERE upload_by = sy-uname
-         OR published = gc_quiz_published.
-
-    IF sy-subrc = 0.
-      et_db_tests[] = lt_db_tests[].
-    ENDIF.
-
-  ENDMETHOD.
-
-
-  METHOD read_available_metrics.
-
-    DATA: lt_db_sync TYPE znept_qz_db_sync_t.
-
-    REFRESH et_db_tests_key[].
-
-    SELECT * FROM znept_qz_mts INTO TABLE lt_db_sync
-      WHERE sync_by = sy-uname.
-
-    IF sy-subrc = 0.
-      MOVE-CORRESPONDING lt_db_sync[] TO et_db_tests_key[].
     ENDIF.
 
   ENDMETHOD.
@@ -788,9 +792,5 @@ CLASS zcl_nept_qz_data_provider IMPLEMENTATION.
 
     ev_do_commit = abap_true.
 
-  ENDMETHOD.
-
-
-  METHOD check.
   ENDMETHOD.
 ENDCLASS.
